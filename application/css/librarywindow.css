@@ -1,0 +1,78 @@
+body {
+    background-color: #394a51;
+    color: #dfd3c3;
+    text-align: center;
+    font-family: avenir,'avenir next', helvetica, arial, sans-serif;
+};
+
+.container{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.container .home-button {
+    background-color: #dfd3c3; 
+    border: none;
+    border-radius: 4px;
+    color: #394a51; 
+    cursor: pointer;
+    text-align: center;
+    font-family: avenir,'avenir next', helvetica, arial, sans-serif;
+    font-size: 16px;
+}
+.container .home-button:hover {
+    background-color: #394a51;
+    color: #dfd3c3; 
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    background-color: #dfd3c3; 
+    border: none;
+    border-radius: 4px;
+    color: #394a51;
+    text-align: center;
+    font-family: avenir,'avenir next', helvetica, arial, sans-serif;
+    font-size: 16px;
+    padding: 2px;
+    width: 24px;
+    
+}
+.container .file-upload-div {
+    margin: 24px;
+}
+
+label:hover {
+    background-color: #394a51;
+    color: #dfd3c3; 
+}
+
+#fileButton {
+    cursor: pointer;
+    background-color: #dfd3c3; 
+    border: none;
+    border-radius: 4px;
+    color: #394a51;
+    text-align: center;
+    font-family: avenir,'avenir next', helvetica, arial, sans-serif;
+    font-size: 16px;
+    padding: 2px;
+    width: 24px;
+    visibility: hidden;
+    
+}
+
+#fileButton:hover {
+    background-color: #394a51;
+    color: #dfd3c3; 
+}
+
+img {
+    height: 24px;
+    width: 24px;
+}

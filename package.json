@@ -2,7 +2,7 @@
   "name": "brew",
   "version": "1.0.0",
   "description": "ebook reader",
-  "main": "main.js",
+  "main": "./application/main.js",
   "scripts": {
     "start": "electron ."
   },
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ybmusa/brew#readme",
   "devDependencies": {
     "electron": "^26.2.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
   }
 }
