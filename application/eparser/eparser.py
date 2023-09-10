@@ -1,9 +1,5 @@
-import zipfile
 import bs4 as bs
 import urllib.request
-
-from bs4 import BeautifulSoup
-from handler import EPUBHandler
 
 
 class Parser:
@@ -36,20 +32,8 @@ class Parser:
             chapter_text = ""
             for paragraph in soup.find_all("p"):
                 chapter_text += str(paragraph.string) + "\n" + "\n"
-                # chapter_text += "\n"
 
             ebook[chapter_number] = chapter_text
             chapter_number += 1
 
         return ebook
-
-
-# Store contents in dictionary (key:value) as chapter:contents
-# extract = EPUBHandler("/Users/yacquub/Downloads/ORV.epub", "ORV")
-
-# Check if user is parsing new epub or old epub
-# extract.extract_epub()
-# parser = Parser(extract.get_chapters(), extract.current_path())
-# content = parser.parse_xhtml()
-# print(content)
-# print(content[1])

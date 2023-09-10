@@ -12,7 +12,7 @@ class EPUBHandler:
     OEBPS:
         Contains the .xhtml files container chapters, and other resources.
 
-    Gets chapter contents from EPUB.
+    Gets chapter contents from EPUB OEBPS folder.
     """
 
     def __init__(self, path: str, epub_name: str):
@@ -50,7 +50,7 @@ class EPUBHandler:
 
     def get_chapters(self):
         """
-        Finds all files ending with .xhtml and removes all others.
+        Finds all files ending with .xhtml and store them in list.
         """
         chapters = []
         epub_directory = self.current_path()

@@ -9,7 +9,6 @@ function StartWatcher(path){
     });
 
     function onWatcherReady(){
-        //console.info('From here can you check for real changes, the initial scan has been completed.');
     }
     watcher.on('change', function(path) {
         console.log('File', path, 'has been changed');
